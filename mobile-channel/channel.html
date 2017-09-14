@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
+		<title>Channel</title>
+		<link rel="stylesheet" type="text/css" href="css/font.css" />
+		<style type="text/css">
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			html{
+				height: 100%;
+			}
+			body{
+				height: 100%;
+			}
+			body,header,ul,header,li,i{
+				margin:0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.clear:after{
+				content: "";
+				display: block;
+				height: 0;
+				clear: both;
+			}
+			
+			/*begining header*/
+			
+			header{
+				background: rgba(21,138,210,1);
+				height: 70px;
+				width: 100%;
+			}
+			header>ul{
+				width:100%;
+				box-sizing: border-box;
+				padding-top: 5px;
+			}
+			header>ul>li{
+				float: left;
+				color: #fff;
+				font-size: 12px;
+				height: 30px;
+				text-align: center;
+			}
+			header>ul>li:nth-of-type(1){
+				width: 40%;
+			}
+			header>ul>li:nth-of-type(2){
+				width: 25%;
+			}
+			header>ul>li:nth-of-type(3){
+				text-align: left;
+				width: 35%;
+				padding-left: 30px;
+				box-sizing: border-box;
+			}
+			header>ul>li:nth-of-type(4){
+				text-align: left;
+				padding-left: 15px;
+				box-sizing: border-box;
+			}
+			header>ul>li:nth-of-type(6){
+				text-align: right;
+				padding-right: 15px;
+				box-sizing: border-box;
+			}
+			header>ul>li:nth-of-type(n+4){
+				color: #fff;
+				width: 33%;
+			}
+			header>ul>li:nth-of-type(n+4)>i{
+				font-size: 26px;
+			}
+			header>ul>li>ul.circle{
+				float: left;
+				margin-top: 6px;
+			}
+			header>ul>li>ul.circle li{
+				float: left;
+				border: 1px solid #fff;
+				width: 7px;
+				height: 7px;
+				border-radius: 7px;
+				background: #fff;
+				margin-left: 3px;
+			}
+			header>ul>li>ul.circle li:nth-of-type(n+4){
+				background: transparent;
+			}
+			header>ul>li>ul.battery li{
+				float: left;
+				padding-left: 5px;
+			}
+			header>ul>li>ul.battery li>i{
+				font-size: 12px;
+			}
+			
+			/*ending header*/
+			
+			
+			/*begining nav*/
+			
+			nav{
+				width: 100%;
+				height: 80px;
+				background: rgba(17,131,201,1);
+				box-sizing: border-box;
+				padding-top:20px;
+			}
+			nav ul li{
+				float: left;
+				width: 33%;
+				
+			}
+			nav ul li a{
+				display: block;
+				font-size: 16px;
+				color: #fafcfd;
+				height: 40px;
+				width: 80px;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 40px;
+				border: 1px solid transparent;
+				margin:auto;
+			}
+			.active{
+				border-color: #419dd3;
+			}
+			/*ending nav*/
+			
+			/*begining section*/
+			
+			section{
+				width: 100%;
+			}
+			section ul{
+				width: 100%;
+			}
+			section ul li{
+				float: left;
+				width: 50%;
+				position: relative;
+			}
+			section ul li img{
+				width: 100%;
+				float: left;
+			}
+			section ul li span{
+				color: #fffefd;
+				position: absolute;
+				left: 20px;
+				bottom: 20px;
+			}
+			/*ending section*/
+		</style>
+	</head>
+		
+	<body>
+		<header>
+			<ul class="clear">
+				<li>
+					<ul class="circle clear">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<span>VIRGIN</span>
+					<i class="iconfont">&#xe8de;</i>
+				</li>
+				<li>
+					4:21 PM
+				</li>
+				<li>
+					<ul class="battery clear">
+						<li>
+							<i class="iconfont">&#xe609;</i>
+						</li>
+						<li>22%</li>
+						<li>
+							<i class="iconfont">&#xe665;</i>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<i class="iconfont">&#xe60d;</i>
+				</li>
+				<li>
+					<i class="iconfont">&#xe665;</i>
+				</li>
+				<li>
+					<i class="iconfont">&#xe6c9;</i>
+				</li>
+			</ul>
+		</header>
+		<nav>
+			<ul class="clear">
+				<li>
+					<a href="#" class="active">全部</a>
+				</li>
+				<li>
+					<a href="#">热门</a>
+				</li>
+				<li>
+					<a href="#">推荐</a>
+				</li>
+			</ul>
+		</nav>
+		<section>
+			<ul>
+				<li>
+					<img src="img/频道_02.gif" alt="" />
+					<span>时尚</span>
+				</li>
+				<li>
+					<img src="img/频道_03.gif" alt="" />
+					<span>时尚</span>
+				</li>
+				<li>
+					<img src="img/频道_04.gif" alt="" />
+					<span>时尚</span>
+				</li>
+				<li>
+					<img src="img/频道_05.gif" alt="" />
+					<span>时尚</span>
+				</li>
+				<li>
+					<img src="img/频道_06.gif" alt="" />
+					<span>时尚</span>
+				</li>
+				<li>
+					<img src="img/频道_07.gif" alt="" />
+					<span>时尚</span>
+				</li>
+			</ul>
+		</section>
+	</body>
+
+</html>
