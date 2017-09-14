@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/font.css"/>
+		<style>
+			html{
+				height: 100%;
+			}
+			body,p,h4,section,ul,li,header,footer{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				height: 100%;
+				box-sizing: border-box;
+			}
+			ul{
+				list-style: none;
+			}
+			.clear:after{
+				content: "";
+				display: block;
+				height: 0;
+				clear: both;
+			}
+			
+			header{
+				/*position: fixed;
+				top:0;*/
+				height: 40px;
+				width: 100%;
+				background: #00AFF0;
+				text-align: center;
+				line-height: 40px;
+				color: #fff;
+				font-size: 18px;
+			}
+			section{
+				
+				width: 100%;
+				height: 100%;
+			}
+			section>ul{
+				box-sizing: border-box;
+				padding-bottom: 40px;
+				overflow-y: auto;
+			}
+			section>ul li{
+				position: relative;
+				box-sizing: border-box;
+				padding: 15px 100px 10px 75px;
+				/*padding-left: 75px;
+				padding-right: 100px;
+				height: 88px;*/
+				border-bottom: 1px solid #ccc;
+			}
+			
+			section>ul li img{
+				max-width: 60px;
+				position: absolute;
+				left: 5px;
+			}
+			section>ul li p{
+				margin: 2px 0px;
+			}
+			section>ul li span{
+				position: absolute;
+				right: 15px;
+				top:35px;
+			}
+			
+			.job{
+				color: #333333;
+				font-size: 14px;
+			}
+			.time{
+				color: #888888;
+				font-size: 12px;
+			}
+			.slh{
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			
+			/* begining footer*/
+			
+			footer{
+				position: fixed;
+				width: 100%;
+				height: 40px;
+				bottom: 0;
+				background: #f6f6f6;
+				text-align: center;
+			}
+			
+			footer ul{
+				width: 100%;
+			}
+			footer ul li{
+				float: left;
+				width: 33%;
+			}
+			footer ul li span{
+				color: #D8D6CC;
+				line-height: 40px;
+			}
+			.active{
+				background: #e7f3f0;
+			}
+			.color{
+				color: #00e38a;
+			}
+			/* ending footer */
+		</style>
+	</head>
+	<body>
+		<header>拉勾网</header>
+		<section>
+			<ul>
+				<li>
+					<img src="img/a.jpg" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job slh">JAVA开发[广州]JAVA开发[广州]JAVA开发[广州]JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+				<li>
+					<img src="img/b.png" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job slh">JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+				<li>
+					<img src="img/c.jpg" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job slh">JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+				<li>
+					<img src="img/d.jpeg" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job slh">JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+				<li>
+					<img src="img/e.png" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job slh">JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+				<li>
+					<img src="img/f.jpg" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job">JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+				<li>
+					<img src="img/g.jpg" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job slh">JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+				<li>
+					<img src="img/h.jpg" alt="" />
+					<h4>龙亿信息</h4>
+					<p class="job slh">JAVA开发[广州]</p>
+					<p class="time">今天14:25</p>
+					<span>14k-22k</span>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<ul class="clear">
+				<li class="active">
+					<i class="iconfont color">&#xe64a;</i>
+					<span class="color">职位</span>
+				</li>
+				<li>
+					<i class="iconfont">&#xe651;</i>
+					<span>搜索</span>
+				</li>
+				<li>
+					<i class="iconfont">&#xe635;</i>
+					<span>我的</span>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
