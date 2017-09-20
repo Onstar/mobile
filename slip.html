@@ -23,6 +23,7 @@
 			.box ul{
 				width: 400%;
 				height: 300px;
+				transition: all 1s;
 			}
 			.box ul li{
 				width: 25%;
@@ -56,6 +57,8 @@
 	<script type="text/javascript">
 		var div = document.querySelector("#box");
 		var lis = document.querySelector("#lis");
+		var liChild = lis.children;
+		console.log(liChild)
 		var n = 0;
 		var flag = true;
 		var hammer = new Hammer(div);
@@ -68,7 +71,9 @@
 				if(n>3){
 					n=3;
 				}
+				console.log(n)
 				lis.style.transform = "translateX(-"+25*n+"%"+")";
+//				lisChild[n].innerHTML=n;
 				flag = false;
 			}
 		})
@@ -79,6 +84,7 @@
 					n=0;
 				}
 				lis.style.transform="translateX(-"+25*n+"%"+")";
+				flag= false;
 			}
 		})
 		lis.addEventListener("touchend",function(){
