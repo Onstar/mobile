@@ -23,7 +23,8 @@
 		<div class="box" id="box"></div>
 	</body>
 	<script>
-		var div = document.querySelector("#box")
+		var div = document.querySelector("#box");
+		
 		div.addEventListener("touchstart",function(e){
 			div.innerHTML = e.touches.length;
 		})
