@@ -39,15 +39,15 @@
 		})
 		hanmmer.on("pinchin",function(){
 			sc-=0.03;
-			div.style.transform = "scale("+sc+")";
+			div.style.webkitTransform = "scale("+sc+")";
 			div.innerHTML = "缩小"+sc;
 			if(sc<.3){
 				sc = 0.3;
 			}
 		})
-		hanmmer.on("pinchin",function(){
+		hanmmer.on("pinchout",function(){
 			sc+=0.03;
-			div.style.transform = "scale("+sc+")";
+			div.style.webkitTransform = "scale("+sc+")";
 			div.innerHTML = "放大"+sc;
 			if(sc>3){
 				sc = 3;
