@@ -30,7 +30,7 @@
 		var sc = 1;
 		var div = document.querySelector("#box");
 		var hanmmer = new Hammer(div);
-		hammer.get("pinch").set({enable:true});
+		hanmmer.get("pinch").set({enable:true});
 		hanmmer.on("panright",function(){
 			div.innerHTML = "panright";
 		})
