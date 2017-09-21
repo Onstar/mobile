@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<div class="box">
-			<p>111</p>
+			<p>11112</p>
 			<p>222</p>
 			<p>333</p>
 			<p>444</p>
@@ -42,7 +42,7 @@
 		$(function(){
 			var n=0;
 			var box = $("div");
-			box.on("touches",function(e){
+			box.on("touchstart",function(e){
 				e.preventDefault();
 			})
 			box.on("swipeLeft",function(){
