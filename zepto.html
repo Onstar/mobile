@@ -42,6 +42,9 @@
 		$(function(){
 			var n=0;
 			var box = $("div");
+			box.on("touches",function(e){
+				e.preventDefault();
+			})
 			box.on("swipeLeft",function(){
 				n++;
 				if(n>=$("p").length){
